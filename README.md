@@ -16,6 +16,10 @@ In the present scenario due to Covid-19, there is no efficient face mask detecti
 ## Project Demo
 Project Demo Link: [https://www.youtube.com/watch?v=AAkNyZlUae0](https://www.youtube.com/watch?v=AAkNyZlUae0)
 
+#### Dev Link
+[https://dev.to/chandrikadeb7/face-mask-detection-my-major-project-3fj3](https://dev.to/chandrikadeb7/face-mask-detection-my-major-project-3fj3)
+
+
 ![](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/Readme_images/Screen%20Shot%202020-05-14%20at%208.49.06%20PM.png)
 
 
