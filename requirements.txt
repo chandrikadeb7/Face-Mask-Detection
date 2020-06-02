@@ -6,5 +6,3 @@ opencv-python==4.2.0.*
 matplotlib==3.2.1
 argparse==1.1
 scipy==1.4.1
-
-
