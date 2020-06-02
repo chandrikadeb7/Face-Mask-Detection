@@ -24,21 +24,16 @@ In the present scenario due to Covid-19, there is no efficient face mask detecti
 
  
 ## :hourglass: Project Demo
-Project Demo Link: [https://www.youtube.com/watch?v=AAkNyZlUae0](https://www.youtube.com/watch?v=AAkNyZlUae0)
+:movie_camera: [YouTube Demo Link](https://www.youtube.com/watch?v=AAkNyZlUae0)
 
-
-
-#### Dev Link
-[https://dev.to/chandrikadeb7/face-mask-detection-my-major-project-3fj3](https://dev.to/chandrikadeb7/face-mask-detection-my-major-project-3fj3)
+:computer: [Dev Link](https://dev.to/chandrikadeb7/face-mask-detection-my-major-project-3fj3)
 
 
 <p align="center"><img src="https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/Readme_images/Screen%20Shot%202020-05-14%20at%208.49.06%20PM.png" width="700" height="400"></p>
 
 
-
 ## :warning: Tech/framework used
 
-<b>Built with</b>
 - [OpenCV](https://opencv.org/)
 - [Caffe-based face detector](https://caffe.berkeleyvision.org/)
 - [Keras](https://keras.io/)
@@ -59,40 +54,45 @@ This dataset consists of __3835 images__ belonging to two classes:
 
 The images used were real images of faces wearing masks. The images were collected from the following sources:
 
-* __Bing Search API__ 
+* __Bing Search API__ ([See Python script](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/search.py))
 * __Kaggle datasets__ 
 * __RMFD dataset__ ([See here](https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset))
 
 ## :key: Prerequisites
 
-All the dependencies and required libraries are included in the file <code>requirements.txt</code>
+All the dependencies and required libraries are included in the file <code>requirements.txt</code> [See here](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/requirements.txt)
 
 ## 🚀&nbsp; Installation
 1. Clone the repo
 ```
-git clone https://github.com/chandrikadeb7/Face-Mask-Detection.git
+$ git clone https://github.com/chandrikadeb7/Face-Mask-Detection.git
 ```
 
-2. Run the following command in your Terminal/Command Prompt to install the libraries required
+2. Change your directory to the cloned repo and create a Python virtual environment named 'test'
 ```
-$ pip install -r requirements.txt
+$ mkvirtualenv test
+```
+
+3. Now, run the following command in your Terminal/Command Prompt to install the libraries required
+```
+$ pip3 install -r requirements.txt
 ```
 
 ## :bulb: Working
 
 1. Open terminal. Go into the cloned project folder and type the following command:
 ```
-$ python train_mask_detector.py --dataset dataset
+$ python3 train_mask_detector.py --dataset dataset
 ```
 
 2. Now detect the face masks in images 
 ```
-$ python detect_mask_image.py --images <path to image>
+$ python3 detect_mask_image.py --images <path to image>
 ```
 
 3. Detection in real-time video streams
 ```
-$ python detect_mask_video.py 
+$ python3 detect_mask_video.py 
 ```
 ## :key: Results
 
@@ -104,9 +104,13 @@ $ python detect_mask_video.py
 ![](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/plot.png)
 
 ## :clap: And it's done!
+Feel free to mail me for any doubts/query 
+:email: chandrikadeb7@gmail.com
+
+## :handshake: Contribution
 Feel free to **file a new issue** with a respective title and description on the the [Face-Mask-Detection](https://github.com/chandrikadeb7/Face-Mask-Detection/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! 
 
-## :heart: Contributor
+## :heart: Owner
 Made with :heart:&nbsp;  by [Chandrika Deb](https://github.com/chandrikadeb7)
 
 ## :+1: Credits
@@ -115,4 +119,3 @@ Made with :heart:&nbsp;  by [Chandrika Deb](https://github.com/chandrikadeb7)
 
 ## :eyes: License
 MIT © [Chandrika Deb](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/LICENSE)
-  
