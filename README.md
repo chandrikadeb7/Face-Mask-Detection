@@ -50,6 +50,18 @@ Our face mask detector didn't uses any morphed masked images dataset. The model 
 
 This system can therefore be used in real-time applications which require face-mask detection for safety purposes due to the outbreak of Covid-19. This project can be integrated with embedded systems for application in airports, railway stations, offices, schools, and public places to ensure that public safety guidelines are followed.
 
+## :file_folder: Dataset
+The dataset used can be downloaded here - [Click to Download](https://drive.google.com/drive/folders/1XDte2DL2Mf_hw4NsmGst7QtYoU7sMBVG?usp=sharing)
+
+This dataset consists of __3835 images__ belonging to two classes:
+*	__with_mask: 1916 images__
+*	__without_mask: 1919 images__
+
+The images used were real images of faces wearing masks. The images were collected from the following sources:
+
+* __Bing Search API__ 
+* __Kaggle datasets__ 
+* __RMFD dataset__ ([See here](https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset))
 
 ## :key: Prerequisites
 
@@ -82,16 +94,14 @@ $ python detect_mask_image.py --images <path to image>
 ```
 $ python detect_mask_video.py 
 ```
+## :key: Results
 
+#### Our model gave 93% accuracy for Face Mask Detection after training via <code>tensorflow-gpu==2.0.0</code>
 
-## :file_folder: Dataset
-The dataset used can be downloaded here - [Click to Download](https://drive.google.com/drive/folders/1XDte2DL2Mf_hw4NsmGst7QtYoU7sMBVG?usp=sharing)
+![](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/Readme_images/Screenshot%202020-06-01%20at%209.48.27%20PM.png)
 
-The images used were real images of faces wearing masks. The images were collected from the following sources:
-
-* __Bing Search API__ 
-* __Kaggle datasets__ 
-* __RMFD dataset__ 
+#### We got the following accuracy/loss training curve plot
+![](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/plot.png)
 
 ## :clap: And it's done!
 Feel free to **file a new issue** with a respective title and description on the the [Face-Mask-Detection](https://github.com/chandrikadeb7/Face-Mask-Detection/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! 
