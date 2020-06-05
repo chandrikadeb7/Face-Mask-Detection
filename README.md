@@ -80,14 +80,14 @@ $ pip3 install -r requirements.txt
 
 ## :bulb: Working
 
-1. Open terminal. Go into the cloned project folder and type the following command:
+1. Open terminal. Go into the cloned project directory folder and type the following command:
 ```
 $ python3 train_mask_detector.py --dataset dataset
 ```
 
 2. Now detect the face masks in images 
 ```
-$ python3 detect_mask_image.py --images <path to image>
+$ python3 detect_mask_image.py --image images/pic1.jpeg
 ```
 
 3. Detection in real-time video streams
