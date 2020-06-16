@@ -56,7 +56,6 @@ def detect_and_predict_mask(frame, faceNet, maskNet):
 			face = cv2.resize(face, (224, 224))
 			face = img_to_array(face)
 			face = preprocess_input(face)
-			face = np.expand_dims(face, axis=0)
 
 			# add the face and bounding boxes to their respective
 			# lists
@@ -68,7 +67,8 @@ def detect_and_predict_mask(frame, faceNet, maskNet):
 		# for faster inference we'll make batch predictions on *all*
 		# faces at the same time rather than one-by-one predictions
 		# in the above `for` loop
-		preds = maskNet.predict(faces)
+		faces = np.array(faces, dtype="float32")
+		preds = maskNet.predict(faces, batch_size=32)
 
 	# return a 2-tuple of the face locations and their corresponding
 	# locations
