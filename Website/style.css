@@ -1,0 +1,54 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  /*background: black;*/
+  text-align:center;
+ background: lightgoldenrodyellow; 
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}
+
+canvas{
+  width:100%;
+  text-align:center;
+  display: inline;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:5em;
+  margin-bottom:2em;
+
+}
+
+
+container {
+	text-align: center;
+}
+
+nav {
+  background: black;
+  padding: 1.6rem 0;
+}
+
+nav .inner .logo {
+  text-transform: uppercase;
+  color:white;
+  text-align: left;
+  margin-left: 5rem;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 1000;
+}
+
+nav .inner .logo i {
+  color: black;
+}
+
+h1 {
+  font-weight: 400;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0 0 1px rgba(40,54,85,0.1); 
+}
