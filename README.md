@@ -123,12 +123,12 @@ $ streamlit run app.py
 <p align="center">
   <img src="Readme_images/1.PNG">
 </p>
-#### Upload Images
+<p align="center">Upload Images</p>
 
 <p align="center">
   <img src="Readme_images/2.PNG">
 </p>
-#### Results
+<p align="center">Results</p>
 
 ## :clap: And it's done!
 Feel free to mail me for any doubts/query 
