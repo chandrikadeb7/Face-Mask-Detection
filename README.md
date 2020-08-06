@@ -118,7 +118,7 @@ command
 ```
 $ streamlit run app.py 
 ```
-### App
+## Images
 
 ![](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/Readme_images/1.png)
 Overview
