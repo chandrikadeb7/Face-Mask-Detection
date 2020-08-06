@@ -121,10 +121,8 @@ $ streamlit run app.py
 ## Images
 
 ![](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/Readme_images/1.png)
-Overview
-![](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/Readme_images/2.png)
 Upload image
-![](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/Readme_images/3.png)
+![](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/Readme_images/2.png)
 Results
 
 
