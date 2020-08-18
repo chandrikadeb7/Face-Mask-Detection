@@ -110,6 +110,26 @@ $ python3 detect_mask_video.py
 #### We got the following accuracy/loss training curve plot
 ![](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/plot.png)
 
+## Streamlit app
+
+Face Mask Detector webapp using Tensorflow & Streamlit
+
+command
+```
+$ streamlit run app.py 
+```
+## Images
+
+<p align="center">
+  <img src="Readme_images/1.PNG">
+</p>
+<p align="center">Upload Images</p>
+
+<p align="center">
+  <img src="Readme_images/2.PNG">
+</p>
+<p align="center">Results</p>
+
 ## :clap: And it's done!
 Feel free to mail me for any doubts/query 
 :email: chandrikadeb7@gmail.com

@@ -8,3 +8,4 @@ argparse==1.1
 scipy==1.4.1
 scikit-learn==0.23.1
 pillow==7.2.0
+streamlit
