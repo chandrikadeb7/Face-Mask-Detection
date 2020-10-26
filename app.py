@@ -98,7 +98,7 @@ def mask_detection():
             im = our_image.save('./images/out.jpg')
             saved_image = st.image(image_file, caption='image uploaded successfully', use_column_width=True)
             if st.button('Process'):
-                st.image(RGB_img)
+                st.image(RGB_img, use_column_width=True)
 
     if choice == 'Webcam':
         st.subheader("Detection on webcam")
