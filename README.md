@@ -146,14 +146,13 @@ MIT © [Chandrika Deb](https://github.com/chandrikadeb7/Face-Mask-Detection/blob
 ## Awards
 Selected in Script Winter Of Code,  Devscript Winter Of Code Project Maintainer
 
-<img src="Readme_images/Devscript.jpeg"width=900>
+![](Readme_images/Devscript.jpeg)
 
-<img src="Readme_images/winter.jpeg"width=900>
-
+![](Readme_images/winter.jpeg)
 ## 👏Appreciation
 
 Student Code-in
-<img src="Readme_images/Student%20code-in.png"width=900>
+![](Readme_images/Student%20code-in.png)
 Awarded Runners Up position in Amdocs Innovation India ICE Project Fair
 
-<img src="Readme_images/nn.jpeg"width=900>
+![](Readme_images/nn.jpeg)
