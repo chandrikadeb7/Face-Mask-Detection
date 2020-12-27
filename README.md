@@ -144,10 +144,11 @@ Made with :heart:&nbsp;  by [Chandrika Deb](https://github.com/chandrikadeb7)
 MIT © [Chandrika Deb](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/LICENSE)
 
 ## Awards
-Selected in Script Winter Of Code,  Devscript Winter Of Code Project Maintainer
+Selected in Devscript Winter Of Code Project Maintainer
 
 ![](Readme_images/Devscript.jpeg)
 
+Selected in Script Winter Of Code as Project Maintainer
 ![](Readme_images/winter.jpeg)
 ## 👏Appreciation
 
