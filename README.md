@@ -142,3 +142,5 @@ Made with :heart:&nbsp;  by [Chandrika Deb](https://github.com/chandrikadeb7)
 
 ## :eyes: License
 MIT © [Chandrika Deb](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/LICENSE)
+
+![](Readme_images/devscript.jpeg)
