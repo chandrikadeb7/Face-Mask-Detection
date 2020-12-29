@@ -133,6 +133,22 @@ Feel free to mail me for any doubts/query
 ## :handshake: Contribution
 Feel free to **file a new issue** with a respective title and description on the the [Face-Mask-Detection](https://github.com/chandrikadeb7/Face-Mask-Detection/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! 
 
+## Awards
+Awarded Runners Up position in Amdocs Innovation India ICE Project Fair
+
+![](Readme_images/nn.jpeg)
+## 👏Appreciation
+Selected in Devscript Winter Of Code
+
+![](Readme_images/Devscript.jpeg)
+
+Selected in Script Winter Of Code 
+![](Readme_images/winter.jpeg)
+Student Code-in
+
+![](Readme_images/Student%20code-in.png)
+
+
 ## :heart: Owner
 Made with :heart:&nbsp;  by [Chandrika Deb](https://github.com/chandrikadeb7)
 
@@ -143,17 +159,3 @@ Made with :heart:&nbsp;  by [Chandrika Deb](https://github.com/chandrikadeb7)
 ## :eyes: License
 MIT © [Chandrika Deb](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/LICENSE)
 
-## Awards
-Selected in Devscript Winter Of Code Project Maintainer
-
-![](Readme_images/Devscript.jpeg)
-
-Selected in Script Winter Of Code as Project Maintainer
-![](Readme_images/winter.jpeg)
-## 👏Appreciation
-
-Student Code-in
-![](Readme_images/Student%20code-in.png)
-Awarded Runners Up position in Amdocs Innovation India ICE Project Fair
-
-![](Readme_images/nn.jpeg)
