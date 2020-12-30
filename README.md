@@ -138,14 +138,14 @@ Awarded Runners Up position in Amdocs Innovation India ICE Project Fair
 
 ![](Readme_images/nn.jpeg)
 ## 👏Appreciation
-Selected in Devscript Winter Of Code
+Selected in [Devscript Winter Of Code])(https://devscript.tech/woc/)
 
 ![](Readme_images/Devscript.jpeg)
 
-Selected in Script Winter Of Code
+Selected in [Script Winter Of Code](https://swoc.tech/project.html)
 
 ![](Readme_images/winter.jpeg)
-Student Code-in
+[Student Code-in](https://scodein.tech/)
 
 ![](Readme_images/Student%20code-in.png)
 
