@@ -142,7 +142,8 @@ Selected in Devscript Winter Of Code
 
 ![](Readme_images/Devscript.jpeg)
 
-Selected in Script Winter Of Code 
+Selected in Script Winter Of Code
+
 ![](Readme_images/winter.jpeg)
 Student Code-in
 
