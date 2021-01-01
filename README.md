@@ -140,5 +140,9 @@ Made with :heart:&nbsp;  by [Chandrika Deb](https://github.com/chandrikadeb7)
 * [https://www.pyimagesearch.com/](https://www.pyimagesearch.com/)
 * [https://www.tensorflow.org/tutorials/images/transfer_learning](https://www.tensorflow.org/tutorials/images/transfer_learning)
 
+## :eyes: Code of Conduct
+
+You can find our Code of Conduct [here](/CODE_OF_CONDUCT.md).
+
 ## :eyes: License
 MIT © [Chandrika Deb](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/LICENSE)
