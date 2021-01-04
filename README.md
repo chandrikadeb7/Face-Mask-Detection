@@ -148,9 +148,8 @@ Selected in [Script Winter Of Code](https://swoc.tech/project.html)
 Seleted [Student Code-in](https://scodein.tech/)
 ![](Readme_images/sci.jpeg)
 
-[Student Code-in](https://scodein.tech/)
 
-![](Readme_images/Student%20code-in.png)
+
 
 
 ## :heart: Owner
