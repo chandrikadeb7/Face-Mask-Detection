@@ -24,7 +24,7 @@ In the present scenario due to Covid-19, there is no efficient face mask detecti
 
  
 ## :hourglass: Project Demo
-:movie_camera: [YouTube Demo Link](https://www.youtube.com/watch?v=AAkNyZlUae0)
+:movie_camera: [YouTube Demo Link](https://youtu.be/wYwW7gAYyxw)
 
 :computer: [Dev Link](https://dev.to/chandrikadeb7/face-mask-detection-my-major-project-3fj3)
 
