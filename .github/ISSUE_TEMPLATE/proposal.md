@@ -1,6 +1,6 @@
 ---
 name: 💥 Proposal
-about: Propose a non-trivial change to NeoAlgo
+about: Propose a non-trivial change to Face-Mask-detection
 labels: "proposal"
 ---
 
