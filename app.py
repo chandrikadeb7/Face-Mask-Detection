@@ -94,22 +94,26 @@ def mask_image():
 mask_image()
 
 def mask_detection():
-    st.title("Face mask detection")
+    local_css("css/styles.css")
+    st.markdown('<h1 align="center">😷 Face Mask Detection</h1>', unsafe_allow_html=True)
     activities = ["Image", "Webcam"]
     st.set_option('deprecation.showfileUploaderEncoding', False)
+    st.sidebar.markdown("# Mask Detection on?")
     choice = st.sidebar.selectbox("Mask Detection on?", activities)
 
     if choice == 'Image':
-        st.subheader("Detection on image")
+        st.markdown('<h2 align="center">Detection on Image</h2>', unsafe_allow_html=True)
+        st.markdown("### Upload your image here ⬇")
         image_file = st.file_uploader("Upload Image", type=['jpg'])  # upload image
         if image_file is not None:
             our_image = Image.open(image_file)  # making compatible to PIL
             im = our_image.save('./images/out.jpg')
             saved_image = st.image(image_file, caption='image uploaded successfully', use_column_width=True)
+            st.markdown('<h3 align="center">Image uploaded successfully</h3>', unsafe_allow_html=True)
             if st.button('Process'):
                 st.image(RGB_img, use_column_width=True)
 
     if choice == 'Webcam':
-        st.subheader("Detection on webcam")
-        st.text("This feature will be avilable soon")
+        st.markdown('<h2 align="center">Detection on Webcam</h2>', unsafe_allow_html=True)
+        st.markdown('<h3 align="center">This feature will be available soon!</h3>', unsafe_allow_html=True)
 mask_detection()
