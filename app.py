@@ -8,6 +8,8 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.models import load_model
 import detect_mask_image
 
+# Setting custom Page Title and Icon with changed layout and sidebar state
+st.beta_set_page_config(page_title='Face Mask Detector', page_icon='😷', layout='centered', initial_sidebar_state='expanded')
 
 def mask_image():
     global RGB_img
