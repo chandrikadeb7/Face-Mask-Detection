@@ -99,17 +99,17 @@ def mask_detection():
     activities = ["Image", "Webcam"]
     st.set_option('deprecation.showfileUploaderEncoding', False)
     st.sidebar.markdown("# Mask Detection on?")
-    choice = st.sidebar.selectbox("Mask Detection on?", activities)
+    choice = st.sidebar.selectbox("Choose among the given options:", activities)
 
     if choice == 'Image':
         st.markdown('<h2 align="center">Detection on Image</h2>', unsafe_allow_html=True)
         st.markdown("### Upload your image here ⬇")
-        image_file = st.file_uploader("Upload Image", type=['jpg'])  # upload image
+        image_file = st.file_uploader("", type=['jpg'])  # upload image
         if image_file is not None:
             our_image = Image.open(image_file)  # making compatible to PIL
             im = our_image.save('./images/out.jpg')
-            saved_image = st.image(image_file, caption='image uploaded successfully', use_column_width=True)
-            st.markdown('<h3 align="center">Image uploaded successfully</h3>', unsafe_allow_html=True)
+            saved_image = st.image(image_file, caption='', use_column_width=True)
+            st.markdown('<h3 align="center">Image uploaded successfully!</h3>', unsafe_allow_html=True)
             if st.button('Process'):
                 st.image(RGB_img, use_column_width=True)
 
