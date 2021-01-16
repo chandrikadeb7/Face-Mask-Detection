@@ -9,7 +9,7 @@ import numpy as np
 import argparse
 import cv2
 import os
-
+from plyer import notification
 def mask_image():
 	# construct the argument parser and parse the arguments
 	ap = argparse.ArgumentParser()
