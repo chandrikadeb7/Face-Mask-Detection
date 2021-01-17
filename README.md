@@ -171,3 +171,6 @@ You can find our Code of Conduct [here](/CODE_OF_CONDUCT.md).
 ## :eyes: License
 MIT © [Chandrika Deb](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/LICENSE)
 
+## :floppy_disk: Size of Repository
+182 MB
+
