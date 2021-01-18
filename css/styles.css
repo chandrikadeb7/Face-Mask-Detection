@@ -1,0 +1,16 @@
+/* Changing body color to dark grey and text color to gainsboro(version of white) */
+body {
+    color: gainsboro;
+    background-color: #333;
+}
+
+/* Changing sideline color to light gray and text color to black */
+.sidebar .sidebar-content {
+    background-color: #c1c1c1;
+    background-image: none;
+    color: black;
+}
+
+/* Removing Main Menubar and Footer */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
