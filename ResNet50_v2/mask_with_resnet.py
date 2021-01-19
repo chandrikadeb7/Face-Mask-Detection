@@ -34,7 +34,7 @@ imagePaths = list(paths.list_images(args["dataset"]))
 data = []
 labels = []
 
-IMG_SIZE = 128
+IMG_SIZE = 224
 CHANNELS = 3
 N_LABELS=2
 
