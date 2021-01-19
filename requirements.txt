@@ -9,3 +9,5 @@ scipy==1.4.1
 scikit-learn==0.23.1
 pillow==7.2.0
 streamlit==0.65.2
+playsound
+pyobjc
