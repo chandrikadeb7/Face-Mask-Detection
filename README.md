@@ -24,7 +24,7 @@ In the present scenario due to Covid-19, there is no efficient face mask detecti
 
  
 ## :hourglass: Project Demo
-:movie_camera: [YouTube Demo Link](https://www.youtube.com/watch?v=AAkNyZlUae0)
+:movie_camera: [YouTube Demo Link](https://youtu.be/wYwW7gAYyxw)
 
 :computer: [Dev Link](https://dev.to/chandrikadeb7/face-mask-detection-my-major-project-3fj3)
 
@@ -133,6 +133,25 @@ Feel free to mail me for any doubts/query
 ## :handshake: Contribution
 Feel free to **file a new issue** with a respective title and description on the the [Face-Mask-Detection](https://github.com/chandrikadeb7/Face-Mask-Detection/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! 
 
+## :trophy: Awards
+Awarded Runners Up position in [Amdocs Innovation India ICE Project Fair]( https://www.amdocs.com/)
+
+![](Readme_images/nn.jpeg)
+
+## 👏 Appreciation
+
+Selected in [Devscript Winter Of Code](https://devscript.tech/woc/)
+
+![](Readme_images/Devscript.jpeg)
+
+Selected in [Script Winter Of Code](https://swoc.tech/project.html)
+
+![](Readme_images/winter.jpeg)
+
+Seleted in [Student Code-in](https://scodein.tech/)
+
+![](Readme_images/sci.jpeg)
+
 ## :heart: Owner
 Made with :heart:&nbsp;  by [Chandrika Deb](https://github.com/chandrikadeb7)
 
@@ -140,5 +159,15 @@ Made with :heart:&nbsp;  by [Chandrika Deb](https://github.com/chandrikadeb7)
 * [https://www.pyimagesearch.com/](https://www.pyimagesearch.com/)
 * [https://www.tensorflow.org/tutorials/images/transfer_learning](https://www.tensorflow.org/tutorials/images/transfer_learning)
 
+## :handshake: Our Contributors
+
+[CONTRIBUTORS.md](/CONTRIBUTORS.md)
+
+
+## :eyes: Code of Conduct
+
+You can find our Code of Conduct [here](/CODE_OF_CONDUCT.md).
+
 ## :eyes: License
 MIT © [Chandrika Deb](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/LICENSE)
+
