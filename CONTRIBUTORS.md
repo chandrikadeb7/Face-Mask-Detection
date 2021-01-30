@@ -25,3 +25,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 </b></sub></a><br />
        <td align="center"><a href="https://github.com/Pisich"><img src="https://avatars1.githubusercontent.com/u/62033118?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Carlos
 </b></sub></a><br />
+       <td align="center"><a href="https://github.com/Aayush-hub"><img src="https://avatars0.githubusercontent.com/u/65889104?s=60&v=4" width="100px;" alt=""/><br /><sub><b>Aayush Garg
+</b></sub></a><br />
