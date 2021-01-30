@@ -23,5 +23,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 </b></sub></a><br />
        <td align="center"><a href="https://github.com/abhinavmaharana"><img src="https://avatars0.githubusercontent.com/u/59000244?s=400&u=4d68a964de00ddf1d896a16264efef9498cb89cf&v=4" width="100px;" alt=""/><br /><sub><b>Abhinav Maharana
 </b></sub></a><br />
+   </tr>
        <td align="center"><a href="https://github.com/Pisich"><img src="https://avatars1.githubusercontent.com/u/62033118?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Carlos
+</b></sub></a><br />
+       <td align="center"><a href="https://github.com/vaishnavi-1"><img src="https://avatars.githubusercontent.com/u/62782231?s=400&u=0456930f4fd318bcf5a9092effe0899756c0737d&v=4" width="100px;" alt=""/><br /><sub><b>Vaishnavi
+</b></sub></a><br />
+       <td align="center"><a href="https://github.com/vilsi12"><img src="https://avatars.githubusercontent.com/u/53365687?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Vilsi
+</b></sub></a><br />
+       <td align="center"><a href="https://github.com/vilsi12"><img src="https://avatars.githubusercontent.com/u/53365687?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Vilsi
 </b></sub></a><br />
