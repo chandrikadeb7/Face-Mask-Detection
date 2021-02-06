@@ -51,9 +51,9 @@ This system can therefore be used in real-time applications which require face-m
 ## :file_folder: Dataset
 The dataset used can be downloaded here - [Click to Download](https://drive.google.com/drive/folders/1XDte2DL2Mf_hw4NsmGst7QtYoU7sMBVG?usp=sharing)
 
-This dataset consists of __3835 images__ belonging to two classes:
-*	__with_mask: 1916 images__
-*	__without_mask: 1919 images__
+This dataset consists of __4095 images__ belonging to two classes:
+*	__with_mask: 2165 images__
+*	__without_mask: 1930 images__
 
 The images used were real images of faces wearing masks. The images were collected from the following sources:
 
