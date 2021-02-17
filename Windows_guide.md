@@ -53,4 +53,4 @@ You can find our Code of Conduct [here](/CODE_OF_CONDUCT.md).
 
 ## Readme
 
-You can find our Readme [here](/Readme.md).
+You can find our Readme [here](/README.md).
