@@ -140,7 +140,7 @@ Awarded Runners Up position in [Amdocs Innovation India ICE Project Fair]( https
 
 ![](Readme_images/nn.jpeg)
 
-## :raising_hand: Citated by:
+## :raising_hand: Cited by:
 
 1. https://osf.io/preprints/3gph4/
 2. https://link.springer.com/chapter/10.1007/978-981-33-4673-4_49
