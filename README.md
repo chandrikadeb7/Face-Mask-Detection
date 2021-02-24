@@ -140,6 +140,14 @@ Awarded Runners Up position in [Amdocs Innovation India ICE Project Fair]( https
 
 ![](Readme_images/nn.jpeg)
 
+## :raising_hand: Cited by:
+
+1. https://osf.io/preprints/3gph4/
+2. https://link.springer.com/chapter/10.1007/978-981-33-4673-4_49
+3. https://ieeexplore.ieee.org/abstract/document/9312083/
+4. https://link.springer.com/chapter/10.1007/978-981-33-4673-4_48
+5. https://www.researchgate.net/profile/Akhyar_Ahmed/publication/344173985_Face_Mask_Detector/links/5f58c00ea6fdcc9879d8e6f7/Face-Mask-Detector.pdf
+
 ## 👏 Appreciation
 
 Selected in [Devscript Winter Of Code](https://devscript.tech/woc/)
