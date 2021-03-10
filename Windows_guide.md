@@ -46,6 +46,10 @@
 ```
 > python3 detect_mask_video.py 
 ```
+3. To detect face masks in an image on webapp type the following command:
+```
+> streamlit run app.py 
+```
 
 ## Code of Conduct
 
