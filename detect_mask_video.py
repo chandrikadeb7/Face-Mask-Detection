@@ -6,14 +6,12 @@ from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.models import load_model
 from imutils.video import VideoStream
-from playsound import playsound
 import numpy as np
 import argparse
 import imutils
 import time
 import cv2
 import os
-from plyer import notification
 
 def detect_and_predict_mask(frame, faceNet, maskNet):
 	# grab the dimensions of the frame and then construct a blob
@@ -126,14 +124,6 @@ while True:
 		# the bounding box and text
 		label = "Mask" if mask > withoutMask else "No Mask"
 		color = (0, 255, 0) if label == "Mask" else (0, 0, 255)
-		if label == "No Mask":
-			notification.notify(
-				title = "***No Mask Detected***",
-                		message = "Wear Mask to stay safe! ",
-                		app_icon = "images/1.ico",    #ico file should be downloaded
-                		timeout = 1
-            		)
-			
 			
 		# include the probability in the label
 		label = "{}: {:.2f}%".format(label, max(mask, withoutMask) * 100)
@@ -143,11 +133,6 @@ while True:
 		cv2.putText(frame, label, (startX, startY - 10),
 			cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 2)
 		cv2.rectangle(frame, (startX, startY), (endX, endY), color, 2)
-
-		# Alarm when "No Mask" detected
-		if mask < withoutMask:
-			path = os.path.abspath("Alarm.wav")
-			playsound(path)
 
 	# show the output frame
 	cv2.imshow("Frame", frame)
@@ -160,4 +145,3 @@ while True:
 # do a bit of cleanup
 cv2.destroyAllWindows()
 vs.stop()
-
