@@ -71,12 +71,20 @@ All the dependencies and required libraries are included in the file <code>requi
 $ git clone https://github.com/chandrikadeb7/Face-Mask-Detection.git
 ```
 
-2. Change your directory to the cloned repo and create a Python virtual environment named 'test'
+2. Change your directory to the cloned repo 
 ```
-$ mkvirtualenv test
+$ cd Face-Mask-Detection
 ```
 
-3. Now, run the following command in your Terminal/Command Prompt to install the libraries required
+3. Create a Python virtual environment named 'test' and activate it
+```
+$ virtualenv test
+```
+```
+$ source test/bin/activate
+```
+
+4. Now, run the following command in your Terminal/Command Prompt to install the libraries required
 ```
 $ pip3 install -r requirements.txt
 ```
@@ -99,7 +107,7 @@ $ python3 detect_mask_video.py
 ```
 ## :key: Results
 
-#### Our model gave 98% accuracy for Face Mask Detection after training via <code>tensorflow-gpu==2.0.0</code>
+#### Our model gave 98% accuracy for Face Mask Detection after training via <code>tensorflow-gpu==2.5.0</code>
 
 <a href="https://colab.research.google.com/drive/1AZ0W2QAHnM3rcj0qbTmc7c3fAMPCowQ1?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 ####          
