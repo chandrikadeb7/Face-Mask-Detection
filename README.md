@@ -22,6 +22,8 @@
 ## :innocent: Motivation
 In the present scenario due to Covid-19, there is no efficient face mask detection applications which are now in high demand for transportation means, densely populated areas, residential districts, large-scale manufacturers and other enterprises to ensure safety. Also, the absence of large datasets of __‘with_mask’__ images has made this task more cumbersome and challenging. 
 
+## The sharing of the PPT and Project Report costs ₹1000 ($13.5)
+If interested :email: chandrikadeb7@gmail.com
  
 ## :hourglass: Project Demo
 :movie_camera: [YouTube Demo Link](https://youtu.be/wYwW7gAYyxw)
@@ -139,8 +141,6 @@ $ streamlit run app.py
 ## :clap: And it's done!
 Feel free to mail me for any doubts/query 
 :email: chandrikadeb7@gmail.com
-
-## The sharing of the PPT and Project Report costs ₹1000 ($13.5). If interested :email: chandrikadeb7@gmail.com
 
 ## :handshake: Contribution
 Feel free to **file a new issue** with a respective title and description on the the [Face-Mask-Detection](https://github.com/chandrikadeb7/Face-Mask-Detection/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! 
