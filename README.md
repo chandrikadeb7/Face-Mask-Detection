@@ -140,6 +140,8 @@ $ streamlit run app.py
 Feel free to mail me for any doubts/query 
 :email: chandrikadeb7@gmail.com
 
+## The sharing of the PPT and Project Report costs ₹1000 ($13.5). If interested :email: chandrikadeb7@gmail.com
+
 ## :handshake: Contribution
 Feel free to **file a new issue** with a respective title and description on the the [Face-Mask-Detection](https://github.com/chandrikadeb7/Face-Mask-Detection/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! 
 
