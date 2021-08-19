@@ -12,6 +12,7 @@ import imutils
 import time
 import cv2
 import os
+import winsound
 
 def detect_and_predict_mask(frame, faceNet, maskNet):
 	# grab the dimensions of the frame and then construct a blob
@@ -101,7 +102,8 @@ maskNet = load_model(args["model"])
 print("[INFO] starting video stream...")
 vs = VideoStream(src=0).start()
 time.sleep(2.0)
-
+frequency = 2500  # Set Frequency To 2500 Hertz
+duration = 1000  # Set Duration To 1000 ms == 1 second
 # loop over the frames from the video stream
 while True:
 	# grab the frame from the threaded video stream and resize it
@@ -123,6 +125,8 @@ while True:
 		# determine the class label and color we'll use to draw
 		# the bounding box and text
 		label = "Mask" if mask > withoutMask else "No Mask"
+		if label=='No Mask':
+			winsound.Beep(frequency, duration)
 		color = (0, 255, 0) if label == "Mask" else (0, 0, 255)
 			
 		# include the probability in the label
