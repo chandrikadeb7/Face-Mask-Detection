@@ -7,6 +7,7 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.models import load_model
 from imutils.video import VideoStream
 import numpy as np
+import playsound as play
 import argparse
 import imutils
 import time
@@ -125,15 +126,16 @@ while True:
 		label = "Mask" if mask > withoutMask else "No Mask"
 		color = (0, 255, 0) if label == "Mask" else (0, 0, 255)
 			
-		# include the probability in the label
-		label = "{}: {:.2f}%".format(label, max(mask, withoutMask) * 100)
+		# include the probability in the label as n
+		n = "{}: {:.2f}%".format(label, max(mask, withoutMask) * 100)
 
-		# display the label and bounding box rectangle on the output
+		# display the label as n and bounding box rectangle on the output
 		# frame
-		cv2.putText(frame, label, (startX, startY - 10),
+		cv2.putText(frame, n, (startX, startY - 10),
 			cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 2)
 		cv2.rectangle(frame, (startX, startY), (endX, endY), color, 2)
-
+		if label == 'No Mask':
+			play.playsound('nomask.mp3')
 	# show the output frame
 	cv2.imshow("Frame", frame)
 	key = cv2.waitKey(1) & 0xFF

@@ -55,4 +55,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 </b></sub></a><br />
        <td align="center"><a href="https://github.com/Aayush-hub"><img src="https://avatars0.githubusercontent.com/u/65889104?s=60&v=4" width="100px;" alt=""/><br /><sub><b>Aayush Garg
 </b></sub></a><br />
-
+       <td align="center"><a href="https://github.com/shubhammanjare17"><img src="https://avatars.githubusercontent.com/u/67304766?s=400&u=164297d3e990e0662be26a65a954ef48df6f02cb&v=4" width="100px;" alt=""/><br /><sub><b>Shubham Manjare
+</b></sub></a><br />
