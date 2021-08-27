@@ -52,15 +52,16 @@ def detect_and_predict_mask(frame, faceNet, maskNet):
 			# extract the face ROI, convert it from BGR to RGB channel
 			# ordering, resize it to 224x224, and preprocess it
 			face = frame[startY:endY, startX:endX]
-			face = cv2.cvtColor(face, cv2.COLOR_BGR2RGB)
-			face = cv2.resize(face, (224, 224))
-			face = img_to_array(face)
-			face = preprocess_input(face)
+			if face.any():
+				face = cv2.cvtColor(face, cv2.COLOR_BGR2RGB)
+				face = cv2.resize(face, (224, 224))
+				face = img_to_array(face)
+				face = preprocess_input(face)
 
-			# add the face and bounding boxes to their respective
-			# lists
-			faces.append(face)
-			locs.append((startX, startY, endX, endY))
+				# add the face and bounding boxes to their respective
+				# lists
+				faces.append(face)
+				locs.append((startX, startY, endX, endY))
 
 	# only make a predictions if at least one face was detected
 	if len(faces) > 0:
