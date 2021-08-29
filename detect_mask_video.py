@@ -12,7 +12,11 @@ import imutils
 import time
 import cv2
 import os
-import winsound
+from pygame.mixer import Sound
+from pygame import mixer
+mixer.init(buffer=512) 
+sound = Sound("beep.wav")  
+
 
 def detect_and_predict_mask(frame, faceNet, maskNet):
 	# grab the dimensions of the frame and then construct a blob
@@ -126,7 +130,7 @@ while True:
 		# the bounding box and text
 		label = "Mask" if mask > withoutMask else "No Mask"
 		if label=='No Mask':
-			winsound.Beep(frequency, duration)
+			sound.play()
 		color = (0, 255, 0) if label == "Mask" else (0, 0, 255)
 			
 		# include the probability in the label
