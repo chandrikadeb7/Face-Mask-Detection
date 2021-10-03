@@ -203,6 +203,8 @@ Awarded Runners Up position in [Amdocs Innovation India ICE Project Fair]( https
 * [https://www.tensorflow.org/tutorials/images/transfer_learning](https://www.tensorflow.org/tutorials/images/transfer_learning)
 
 ## :handshake: Contribution
+
+#### Please read the Contribution Guidelines [here](https://github.com/chandrikadeb7/Face-Mask-Detection/CONTRIBUTING.md)
 Feel free to **file a new issue** with a respective title and description on the the [Face-Mask-Detection](https://github.com/chandrikadeb7/Face-Mask-Detection/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! 
 
 ## :handshake: Our Contributors
