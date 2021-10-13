@@ -15,7 +15,7 @@ def local_css(file_name):
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 
-def mask_image(image):
+def mask_image_init():
     # load our serialized face detector model from disk
     print("[INFO] loading face detector model...")
     prototxtPath = os.path.sep.join(["face_detector", "deploy.prototxt"])
@@ -26,7 +26,10 @@ def mask_image(image):
     # load the face mask detector model from disk
     print("[INFO] loading face mask detector model...")
     model = load_model("mask_detector.model")
+    return net, model
 
+
+def mask_image(net, model, image):
     (h, w) = image.shape[:2]
 
     # construct a blob from the image
@@ -106,8 +109,9 @@ def mask_detection():
             if st.button('Process'):
                 # load the input image from disk and grab the image spatial
                 # dimensions
-                image = cv2.imread("./images/out.jpg")                
-                RGB_img = mask_image(image)
+                image = cv2.imread("./images/out.jpg")
+                (net, model) = mask_image_init()                
+                RGB_img = mask_image(net, model, image)
                 st.image(RGB_img, use_column_width=True)
 
     if choice == 'Webcam':
