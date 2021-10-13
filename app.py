@@ -1,13 +1,14 @@
 import streamlit as st
 from PIL import Image, ImageEnhance
 import numpy as np
+import av
 import cv2
 import os
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.models import load_model
 import detect_mask_image
-
+from streamlit_webrtc import VideoTransformerBase, webrtc_streamer
 
 def local_css(file_name):
     """ Method for reading styles.css and applying necessary changes to HTML"""
@@ -35,7 +36,6 @@ def get_detections_from_image(net, image):
                                  (104.0, 177.0, 123.0))
 
     # pass the blob through the network and obtain the face detections
-    print("[INFO] computing face detections...")
     net.setInput(blob)
     return net.forward()
 
@@ -91,6 +91,16 @@ def mask_image(model, detections, image):
 
 
 def mask_detection():
+    class VideoTransformer(VideoTransformerBase):
+        def __init__(self) -> None:
+            (self.net, self.model) = mask_image_init()
+
+        def recv(self, frame: av.VideoFrame) -> av.VideoFrame:
+            image = frame.to_ndarray(format="bgr24")
+            detections = get_detections_from_image(self.net, image)
+            RGB_img = mask_image(self.model, detections, image)
+            return av.VideoFrame.from_ndarray(RGB_img, format="bgr24")
+
     local_css("css/styles.css")
     st.markdown('<h1 align="center">😷 Face Mask Detection</h1>', unsafe_allow_html=True)
     activities = ["Image", "Webcam"]
@@ -118,7 +128,7 @@ def mask_detection():
 
     if choice == 'Webcam':
         st.markdown('<h2 align="center">Detection on Webcam</h2>', unsafe_allow_html=True)
-        st.markdown('<h3 align="center">This feature will be available soon!</h3>', unsafe_allow_html=True)
+        webrtc_streamer(key="example", video_processor_factory=VideoTransformer)
 
 
 if __name__ == "__main__":
