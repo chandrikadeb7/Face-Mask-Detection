@@ -29,9 +29,7 @@ def mask_image_init():
     return net, model
 
 
-def mask_image(net, model, image):
-    (h, w) = image.shape[:2]
-
+def get_detections_from_image(net, image):
     # construct a blob from the image
     blob = cv2.dnn.blobFromImage(image, 1.0, (300, 300),
                                  (104.0, 177.0, 123.0))
@@ -39,7 +37,10 @@ def mask_image(net, model, image):
     # pass the blob through the network and obtain the face detections
     print("[INFO] computing face detections...")
     net.setInput(blob)
-    detections = net.forward()
+    return net.forward()
+
+def mask_image(model, detections, image):
+    (h, w) = image.shape[:2]
 
     # loop over the detections
     for i in range(0, detections.shape[2]):
@@ -110,8 +111,9 @@ def mask_detection():
                 # load the input image from disk and grab the image spatial
                 # dimensions
                 image = cv2.imread("./images/out.jpg")
-                (net, model) = mask_image_init()                
-                RGB_img = mask_image(net, model, image)
+                (net, model) = mask_image_init()
+                detections = get_detections_from_image(net, image)
+                RGB_img = mask_image(model, detections, image)
                 st.image(RGB_img, use_column_width=True)
 
     if choice == 'Webcam':
