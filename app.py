@@ -19,7 +19,6 @@ def local_css(file_name):
 
 
 def mask_image():
-    global RGB_img
     # load our serialized face detector model from disk
     print("[INFO] loading face detector model...")
     prototxtPath = os.path.sep.join(["face_detector", "deploy.prototxt"])
@@ -90,8 +89,8 @@ def mask_image():
             cv2.putText(image, label, (startX, startY - 10),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 2)
             cv2.rectangle(image, (startX, startY), (endX, endY), color, 2)
-            RGB_img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-mask_image()
+            return cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
 
 def mask_detection():
     local_css("css/styles.css")
@@ -111,6 +110,7 @@ def mask_detection():
             saved_image = st.image(image_file, caption='', use_column_width=True)
             st.markdown('<h3 align="center">Image uploaded successfully!</h3>', unsafe_allow_html=True)
             if st.button('Process'):
+                RGB_img = mask_image()
                 st.image(RGB_img, use_column_width=True)
 
     if choice == 'Webcam':
