@@ -8,9 +8,6 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.models import load_model
 import detect_mask_image
 
-# Setting custom Page Title and Icon with changed layout and sidebar state
-st.set_page_config(page_title='Face Mask Detector', page_icon='😷', layout='centered', initial_sidebar_state='expanded')
-
 
 def local_css(file_name):
     """ Method for reading styles.css and applying necessary changes to HTML"""
@@ -116,4 +113,9 @@ def mask_detection():
     if choice == 'Webcam':
         st.markdown('<h2 align="center">Detection on Webcam</h2>', unsafe_allow_html=True)
         st.markdown('<h3 align="center">This feature will be available soon!</h3>', unsafe_allow_html=True)
-mask_detection()
+
+
+if __name__ == "__main__":
+    # Setting custom Page Title and Icon with changed layout and sidebar state
+    st.set_page_config(page_title='Face Mask Detector', page_icon='😷', layout='centered', initial_sidebar_state='expanded')
+    mask_detection()
