@@ -145,40 +145,40 @@ $ streamlit run app.py
 
 ---
 
-## Internet of Things Device Setup
+## IoT 디바이스 설정
 
-### Expected Hardware
-* [Raspberry Pi 4 4GB with a case](https://www.canakit.com/raspberry-pi-4-4gb.html)
-* [5MP OV5647 PiCamera from Arducam](https://www.arducam.com/docs/cameras-for-raspberry-pi/native-raspberry-pi-cameras/5mp-ov5647-cameras/)
+### 최소사양
+* [케이스가 있는 Raspberry Pi 4 4GB](https://www.canakit.com/raspberry-pi-4-4gb.html)
+* [Arducam의 5MP OV5647 PiCamera](https://www.arducam.com/docs/cameras-for-raspberry-pi/native-raspberry-pi-cameras/5mp-ov5647-cameras/)
 
-### Getting Started
-* Setup the Raspberry Pi case and Operating System by following the Getting Started section on page 3 at `documentation/CanaKit-Raspberry-Pi-Quick-Start-Guide-4.0.pdf` or https://www.canakit.com/Media/CanaKit-Raspberry-Pi-Quick-Start-Guide-4.0.pdf
-  * With NOOBS, use the recommended operating system
-* Setup the PiCamera
-  * Assemble the PiCamera case from Arducam using `documentation/Arducam-Case-Setup.pdf` or https://www.arducam.com/docs/cameras-for-raspberry-pi/native-raspberry-pi-cameras/5mp-ov5647-cameras/
-  * [Attach your PiCamera module to the Raspberry Pi and enable the camera](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/2)
+### 시작하기
+* Raspberry Pi 케이스를 설치하고 `documentation/CanaKit-Raspberry-Pi-Quick-Start-Guide-4.0.pdf`의 3페이지 Getting Started section 또는 https://www.canakit.com/Media/CanaKit-Raspberry-Pi-Quick-Start-Guide-4.0.pdf 에서 오퍼레이팅 시스템을 설정하세요.
+  * 초보자라면 추천 오퍼레이팅 시스템을 사용하세요.
+* PiCamera를 설정하세요.
+  * `documentation/Arducam-Case-Setup.pdf` 또는 https://www.arducam.com/docs/cameras-for-raspberry-pi/native-raspberry-pi-cameras/5mp-ov5647-cameras/ 을 사용해서 Arducam에서 PiCamera를 설정하세요.
+  * [PiCamera 모듈과 Raspberry Pi를 연결하고 카메라를 사용가능하게 설정하세요.](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/2)
 
-### Raspberry Pi App Installation & Execution
+### Raspberry Pi 어플리케이션 설치 및 실행
 
-> Run these commands after cloning the project
+> 프로젝트를 클론한 후 아래 명령어를 실행하세요.
 
-| Commands                                                                                                                     | Time to completion |
+| 명령어                                                                                                |     소요시간     |
 |------------------------------------------------------------------------------------------------------------------------------|--------------------|
-| sudo apt install -y libatlas-base-dev liblapacke-dev gfortran                                                                | 1min               |
-| sudo apt install -y libhdf5-dev libhdf5-103                                                                                  | 1min               |
-| pip3 install -r requirements.txt                                                                                             | 1-3 mins           |
-| wget "https://raw.githubusercontent.com/PINTO0309/Tensorflow-bin/master/tensorflow-2.4.0-cp37-none-linux_armv7l_download.sh" | less than 10 secs  |
-| ./tensorflow-2.4.0-cp37-none-linux_armv7l_download.sh                                                                        | less than 10 secs  |
-| pip3 install tensorflow-2.4.0-cp37-none-linux_armv7l.whl                                                                     | 1-3 mins           |
+| sudo apt install -y libatlas-base-dev liblapacke-dev gfortran                                                                | 1분                |
+| sudo apt install -y libhdf5-dev libhdf5-103                                                                                  | 1분                |
+| pip3 install -r requirements.txt                                                                                             | 1-3분              |
+| wget "https://raw.githubusercontent.com/PINTO0309/Tensorflow-bin/master/tensorflow-2.4.0-cp37-none-linux_armv7l_download.sh" | 10초 이내          |
+| ./tensorflow-2.4.0-cp37-none-linux_armv7l_download.sh                                                                        | 10초 이내          |
+| pip3 install tensorflow-2.4.0-cp37-none-linux_armv7l.whl                                                                     | 1-3분              |
 
 ---
 
-## :trophy: Awards
-Awarded Runners Up position in [Amdocs Innovation India ICE Project Fair]( https://www.amdocs.com/)
+## :trophy: 수상
+[Amdocs Innovation India ICE Project Fair]( https://www.amdocs.com/)에서 Runners Up 수상
 
 ![](Readme_images/nn.jpeg)
 
-## :raising_hand: Cited by:
+## :raising_hand: 인용:
 
 1. https://osf.io/preprints/3gph4/
 2. https://link.springer.com/chapter/10.1007/978-981-33-4673-4_49
@@ -186,51 +186,51 @@ Awarded Runners Up position in [Amdocs Innovation India ICE Project Fair]( https
 4. https://link.springer.com/chapter/10.1007/978-981-33-4673-4_48
 5. https://www.researchgate.net/profile/Akhyar_Ahmed/publication/344173985_Face_Mask_Detector/links/5f58c00ea6fdcc9879d8e6f7/Face-Mask-Detector.pdf
 
-## 👏 Appreciation
+## 👏 감사합니다!
 
-### Selected in [Devscript Winter Of Code](https://devscript.tech/woc/)
+### [Devscript Winter Of Code](https://devscript.tech/woc/) 에 선정
 <img src="Readme_images/Devscript.jpeg" height=300 width=300>
 
-### Selected in [Script Winter Of Code](https://swoc.tech/project.html)
+### [Script Winter Of Code](https://swoc.tech/project.html) 에 선정
 <img src="Readme_images/winter.jpeg" height=300 width=300>
 
-### Seleted in [Student Code-in](https://scodein.tech/)
+### [Student Code-in](https://scodein.tech/) 에 선정
 <img src="Readme_images/sci.jpeg" height=300 width=300>
 
-## :+1: Credits
+## :+1: 크레딧
 * [https://www.pyimagesearch.com/](https://www.pyimagesearch.com/)
 * [https://www.tensorflow.org/tutorials/images/transfer_learning](https://www.tensorflow.org/tutorials/images/transfer_learning)
 
-## :handshake: Contribution
+## :handshake: 컨트리뷰션
 
-#### Please read the Contribution Guidelines [here](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/CONTRIBUTING.md)
-Feel free to **file a new issue** with a respective title and description on the the [Face-Mask-Detection](https://github.com/chandrikadeb7/Face-Mask-Detection/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**! 
+#### [여기](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/CONTRIBUTING.md)서 컨트리뷰션 가이드 라인을 꼭 읽어주세요!
+ 적절한 제목과 설명과 함께 [마스크 감지 시스템](https://github.com/chandrikadeb7/Face-Mask-Detection/issues)의 **새로운 issue를 자유롭게 제보 해주세요!**. 만약 이미 해결법을 이미 찾아셨다면, **Pull Request**는 항상 환영합니다!
 
-## :handshake: Our Contributors
+## :handshake: 컨트리뷰터들
 
 <a href="https://github.com/chandrikadeb7/Face-Mask-Detection/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=chandrikadeb7/Face-Mask-Detection" />
 </a>
 
 
-## :eyes: Code of Conduct
+## :eyes: 행위규범
 
-You can find our Code of Conduct [here](/CODE_OF_CONDUCT.md).
+우리의 행동규범은 [여기](/CODE_OF_CONDUCT.md)서 찾아 보실수 있습니다..
 
 
-## :raising_hand: Citation
+## :raising_hand: 인용에 대해
 
-You are allowed to cite any part of the code or our dataset. You can use it in your Research Work or Project. Remember to provide credit to the Maintainer Chandrika Deb by mentioning a link to this repository and her GitHub Profile.
+우리의 코드나 데이터셋 어디서든지 인용할 수 있습니다. 조사 연구나 프로젝트에도 사용할 수 있습니다. 이 repository에 링크를 멘션하거나 Chandrika Deb의 GitHub 프로필에 꼭 크레딧을 남겨주세요.
 
-Follow this format:
-- Author's name - Chandrika Deb
-- Date of publication or update in parentheses.
-- Title or description of document.
+포멧:
+- 작성자 이름 - Chandrika Deb
+- 삽입구의 게시일 또는 업데이트 날짜
+- 문서의 제목 또는 설명.
 - URL.
 
-## :heart: Owner
-Made with :heart:&nbsp;  by [Chandrika Deb](https://github.com/chandrikadeb7)
+## :heart: 오너
+[Chandrika Deb](https://github.com/chandrikadeb7)이 사랑을 :heart:&nbsp;을 담아서 만들었습니다!
 
-## :eyes: License
-MIT © [Chandrika Deb](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/LICENSE)
+## :eyes: 라이센스
+MIT 라이센스 © [Chandrika Deb](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/LICENSE)
 
