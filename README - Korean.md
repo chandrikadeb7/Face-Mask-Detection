@@ -1,7 +1,7 @@
-<h1 align="center">Face Mask Detection</h1>
+<h1 align="center">마스크 인식 시스템(Face Mask Detection)</h1>
 
 <div align= "center"><img src="https://github.com/Vrushti24/Face-Mask-Detection/blob/logo/Logo/facemaskdetection.ai%20%40%2051.06%25%20(CMYK_GPU%20Preview)%20%2018-02-2021%2018_33_18%20(2).png" width="200" height="200"/>
-  <h4>Face Mask Detection System built with OpenCV, Keras/TensorFlow using Deep Learning and Computer Vision concepts in order to detect face masks in static images as well as in real-time video streams.</h4>
+  <h4>마스크 인식 시스템은 OpenCV, Keras/TensorFlow로 빌드되었으며, 딥 러닝, 컴퓨터 비전 개념을 사용하여 정적인 사진 또는 실시간 비디오에서 마스크 착용 여부를 인식합니다.</h4>
 </div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -16,21 +16,21 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![Live Demo](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/Readme_images/Demo.gif)
 
-## :point_down: Support me here!
+## :point_down: 후원하기!
 <a href="https://www.buymeacoffee.com/chandrikadeb7" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
-## :innocent: Motivation
-Amid the ongoing COVID-19 pandemic, there are no efficient face mask detection applications which are now in high demand for transportation means, densely populated areas, residential districts, large-scale manufacturers and other enterprises to ensure safety. The absence of large datasets of __‘with_mask’__ images has made this task cumbersome and challenging. 
+## :innocent: 제작 동기
+코로나19 팬데믹이 계속되는 가운데에, 대중교통, 주택 지구, 대규모 제조업체 및 기타 기업들에서 안전을 위해 마스크 인식 시스템을 필요로 하는 수요가 높았지만, 효율적인 마스크 인식 시스템을 찾아보긴 어려웠습니다. __'마스크를 착용하고 있는'__ 대규모의 데이터가 없어서 이 작업에 어려움이 있었습니다. 
 
-## PPT and Project Report sharing costs ₹1000 ($15)
-If interested, contact me at chandrikadeb7@gmail.com
+## PPT와 프로젝트 발표는 ₹1000 ($15, 약 16000원)에 구매하실 수 있습니다!
+관심이 있으시다면 chandrikadeb7@gmail.com으로 연락 주세요!
 
-# 🌟 [Purchase at a Discounted Rate](https://gum.co/GetFaceMask)
+# 🌟 [할인된 가격으로 구매하고 싶다면?](https://gum.co/GetFaceMask)
  
-## :hourglass: Project Demo
-:movie_camera: [YouTube Demo Link](https://youtu.be/wYwW7gAYyxw)
+## :hourglass: 데포 버전
+:movie_camera: [유튜브 링크](https://youtu.be/wYwW7gAYyxw)
 
-:computer: [Dev Link](https://dev.to/chandrikadeb7/face-mask-detection-my-major-project-3fj3)
+:computer: [개발자 링크](https://dev.to/chandrikadeb7/face-mask-detection-my-major-project-3fj3)
 
 [![Already deployed version](https://raw.githubusercontent.com/vasantvohra/TrashNet/master/hr.svg)](https://face-mask--detection-app.herokuapp.com/)
 
@@ -39,7 +39,7 @@ If interested, contact me at chandrikadeb7@gmail.com
 <p align="center"><img src="https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/Readme_images/Screen%20Shot%202020-05-14%20at%208.49.06%20PM.png" width="700" height="400"></p>
 
 
-## :warning: TechStack/framework used
+## :warning: 사용된 TechStack/프레임워크
 
 - [OpenCV](https://opencv.org/)
 - [Caffe-based face detector](https://caffe.berkeleyvision.org/)
@@ -47,40 +47,39 @@ If interested, contact me at chandrikadeb7@gmail.com
 - [TensorFlow](https://www.tensorflow.org/)
 - [MobileNetV2](https://arxiv.org/abs/1801.04381)
 
-## :star: Features
-Our face mask detector doesn't use any morphed masked images dataset and the model is accurate. Owing to the use of MobileNetV2 architecture, it is computationally efficient, thus making it easier to deploy the model to embedded systems (Raspberry Pi, Google Coral, etc.).
+## :star: 특징
+우리 마스크 인식 시스템은 어떠한 형태로든 모프된 마스크 이미지 데이터셋을 사용하지 않았으며, 모델은 정확합니다. MobileNetV2 아키텍처의 사용으로, 계산상 효율을 챙겼으며, 이 모델을 라즈베리 파이, 구글 코랄과 같은 임베디드 시스템에 적용시키는 것이 쉬워졌습니다.
 
-This system can therefore be used in real-time applications which require face-mask detection for safety purposes due to the outbreak of Covid-19. This project can be integrated with embedded systems for application in airports, railway stations, offices, schools, and public places to ensure that public safety guidelines are followed.
+따라서 이 시스템은 코로나19로부터의 안전을 위해 실시간으로 마스크 감지를 할수 있는 어플리케이션 필요한 곳에서 사용할 수 있습니다. 이 프로젝트는 공항, 역, 사무실, 학교와 같은 임베디드 시스템과 통합하여 공공 안전 지침을 준수하는 데에 도움을 줄 수 있습니다.
 
-## :file_folder: Dataset
-The dataset used can be downloaded here - [Click to Download](https://github.com/chandrikadeb7/Face-Mask-Detection/tree/master/dataset)
+## :file_folder: 데이터셋
+사용된 데이터셋은 [여기](https://github.com/chandrikadeb7/Face-Mask-Detection/tree/master/dataset)서 다운로드 받을 수 있습니다.
 
-This dataset consists of __4095 images__ belonging to two classes:
-*	__with_mask: 2165 images__
-*	__without_mask: 1930 images__
+데이터셋은 두 클래스로 나뉘어지는 __4095개의 이미지로__ 구성되어있습니다:
+*	__마스크를 착용한 2165개의 사진__
+*	__마스크를 착용하지 않은 1930개의 사진__
 
-The images used were real images of faces wearing masks. The images were collected from the following sources:
+이미지는 실제로 마스크를 착용하고 있는 사진을 사용했습니다. 이미지는 다음과 같은 소스에서 수집하였습니다:
+* __Bing 검색 API__ ([See Python script](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/search.py))
+* __Kaggle 데이터셋__ 
+* __RMFD 데이터셋__ ([See here](https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset))
 
-* __Bing Search API__ ([See Python script](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/search.py))
-* __Kaggle datasets__ 
-* __RMFD dataset__ ([See here](https://github.com/X-zhangyang/Real-World-Masked-Face-Dataset))
+## :key: 필요조건
 
-## :key: Prerequisites
+필요한 모든 라이브러리는 <code>requirements.txt</code> 에 포함되어 있습니다 [바로가기](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/requirements.txt)
 
-All the dependencies and required libraries are included in the file <code>requirements.txt</code> [See here](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/requirements.txt)
-
-## 🚀&nbsp; Installation
-1. Clone the repo
+## 🚀&nbsp; 설치하기
+1. repository를 클론하세요.
 ```
 $ git clone https://github.com/chandrikadeb7/Face-Mask-Detection.git
 ```
 
-2. Change your directory to the cloned repo 
+2. 경로를 클론한 repository의 위치로 변경하세요.
 ```
 $ cd Face-Mask-Detection
 ```
 
-3. Create a Python virtual environment named 'test' and activate it
+3. 'test'라는 Python 가상환경을 만들고 작동하세요.
 ```
 $ virtualenv test
 ```
@@ -88,60 +87,60 @@ $ virtualenv test
 $ source test/bin/activate
 ```
 
-4. Now, run the following command in your Terminal/Command Prompt to install the libraries required
+4. 그리고 필요한 라이브러리를 설치하기 위해 아래 명령어를 당신의 터미널/커맨드 프롬프트에 실행하세요.
 ```
 $ pip3 install -r requirements.txt
 ```
 
-## :bulb: Working
+## :bulb: 실행하기
 
-1. Open terminal. Go into the cloned project directory and type the following command:
+1. 터미널을 열고 클론한 프로젝트가 있는 경로로 이동하세요. 그 후 아래 명령어를 입력하세요:
 ```
 $ python3 train_mask_detector.py --dataset dataset
 ```
 
-2. To detect face masks in an image type the following command: 
+2. 사진에서의 마스크 착용여부를 확인하기 위해선 아래 명령어를 입력하세요:
 ```
 $ python3 detect_mask_image.py --image images/pic1.jpeg
 ```
 
-3. To detect face masks in real-time video streams type the following command:
+3. 실시간 영상에서의 마스크 착용여부를 확인하기 위해선 아래 명령어를 입력하세요:
 ```
 $ python3 detect_mask_video.py 
 ```
-## :key: Results
+## :key: 결과
 
-#### Our model gave 98% accuracy for Face Mask Detection after training via <code>tensorflow-gpu==2.5.0</code>
+#### 우리 모델은 <code>tensorflow-gpu==2.5.0</code>를 통한 학습 이후 98%의 정확도를 보여주고 있습니다.
 
 <a href="https://colab.research.google.com/drive/1AZ0W2QAHnM3rcj0qbTmc7c3fAMPCowQ1?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 ####          
 ![](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/Readme_images/Screenshot%202020-06-01%20at%209.48.27%20PM.png)
 
-#### We got the following accuracy/loss training curve plot
+#### 우리는 훈련 기간동안 아래와 같은 정확도/놓침 변화를 가졌습니다.
 ![](https://github.com/chandrikadeb7/Face-Mask-Detection/blob/master/plot.png)
 
-## Streamlit app
+## Streamlit 어플리케이션
 
-Face Mask Detector webapp using Tensorflow & Streamlit
+Tensorflow & Streamlit를 사용해서 마스크 감지 시스템 웹 어플리케이션을 사용하세요!
 
-command
+명령어
 ```
 $ streamlit run app.py 
 ```
-## Images
+## 실행 이미지
 
 <p align="center">
   <img src="Readme_images/1.PNG">
 </p>
-<p align="center">Upload Images</p>
+<p align="center">이미지 업로드</p>
 
 <p align="center">
   <img src="Readme_images/2.PNG">
 </p>
-<p align="center">Results</p>
+<p align="center">결과</p>
 
-## :clap: And it's done!
-Feel free to mail me for any doubts/query 
+## :clap: 이제 다 끝났습니다!
+문의사항이나 의문이 있다면 자유롭게 이메일을 남겨주세요! 
 :email: chandrikadeb7@gmail.com
 
 ---
