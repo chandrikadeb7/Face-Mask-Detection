@@ -9,3 +9,5 @@ scipy==1.6.2
 scikit-learn==0.24.1
 pillow>=8.3.2
 streamlit==0.79.0
+onnx==1.10.1
+tf2onnx==1.9.3
