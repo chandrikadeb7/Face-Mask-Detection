@@ -1,0 +1,18 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Face Mask Detection
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - email: chandrikadeb7@gmail.com
+    family-names: Deb
+    given-names: Chandrika
+repository-code: >-
+  https://github.com/chandrikadeb7/Face-Mask-Detection
+license: MIT
+version: v1.0.0
+date-released: '2022-02-27'
