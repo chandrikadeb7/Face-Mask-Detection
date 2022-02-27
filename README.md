@@ -218,17 +218,6 @@ Feel free to **file a new issue** with a respective title and description on the
 
 You can find our Code of Conduct [here](/CODE_OF_CONDUCT.md).
 
-
-## :raising_hand: Citation
-
-You are allowed to cite any part of the code or our dataset. You can use it in your Research Work or Project. Remember to provide credit to the Maintainer Chandrika Deb by mentioning a link to this repository and her GitHub Profile.
-
-Follow this format:
-- Author's name - Chandrika Deb
-- Date of publication or update in parentheses.
-- Title or description of document.
-- URL.
-
 ## :heart: Owner
 Made with :heart:&nbsp;  by [Chandrika Deb](https://github.com/chandrikadeb7)
 
