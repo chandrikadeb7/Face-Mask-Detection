@@ -1,5 +1,8 @@
 #from https://pyimagesearch.com/2020/04/13/opencv-age-detection-with-deep-learning/ tutorial
 
+### USAGE: $ python age_detection_image.py --image some_directory/image.png --face face_detector --age age_detector
+
+
 # import the necessary packages
 
 import numpy as np
