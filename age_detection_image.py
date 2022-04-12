@@ -1,87 +1,60 @@
-#from https://pyimagesearch.com/2020/04/13/opencv-age-detection-with-deep-learning/ tutorial
+#This is training code for age detection model
+#Currently, mean ablsoute error value is about ±30 age which is so big
 
-### USAGE: $ python age_detection_image.py --image some_directory/image.png --face face_detector --age age_detector
 
-
-# import the necessary packages
-
+#Import libraries
+import pandas as pd
 import numpy as np
-import argparse
-import cv2
-import os
-# construct the argument parse and parse the arguments
-ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", required=True,
-	help="path to input image")
-ap.add_argument("-f", "--face", required=True,
-	help="path to face detector model directory")
-ap.add_argument("-a", "--age", required=True,
-	help="path to age detector model directory")
-ap.add_argument("-c", "--confidence", type=float, default=0.5,
-	help="minimum probability to filter weak detections")
-args = vars(ap.parse_args())
+import tensorflow as tf
+from sklearn import model_selection
 
+#This is CNN model
+def sequential_model():
+	my_model = tf.keras.Sequential()
+	my_model.add(tf.keras.layers.InputLayer(input_shape=(48,48,1)))
+	my_model.add(tf.keras.layers.Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3)))
+	my_model.add(tf.keras.layers.BatchNormalization())
+	my_model.add(tf.keras.layers.MaxPooling2D((2, 2)))
+	my_model.add(tf.keras.layers.Conv2D(64, (3, 3), activation='relu'))
+	my_model.add(tf.keras.layers.MaxPooling2D((2, 2)))
+	my_model.add(tf.keras.layers.Conv2D(128, (3, 3), activation='relu'))
+	my_model.add(tf.keras.layers.MaxPooling2D((2, 2)))
+	my_model.add(tf.keras.layers.Conv2D(256, (3, 3), activation='relu'))
+	my_model.add(tf.keras.layers.MaxPooling2D((2, 2)))
+	my_model.add(tf.keras.layers.Flatten())
+	my_model.add(tf.keras.layers.Dense(64, activation='relu'))
+	my_model.add(tf.keras.layers.Dropout(rate=0.5))
+	my_model.add(tf.keras.layers.Dense(1, activation='relu'))
+	return my_model
 
-# define the list of age buckets our age detector will predict
-AGE_BUCKETS = ["(0-2)", "(4-6)", "(8-12)", "(15-20)", "(25-32)", "(38-43)", "(48-53)", "(60-100)"]
+def pixel_to_array(column_name):
+	data[column_name] = data[column_name].apply(lambda each: np.array(each.split(), dtype = "float32"))
+	image_3D = np.array(data[column_name].tolist())
+	image_3D= image_3D.reshape(image_3D.shape[0],48,48,1)
+	return image_3D
 
-# load our serialized face detector model from disk
-print("[INFO] loading face detector model...")
-prototxtPath = os.path.sep.join([args["face"], "deploy.prototxt"])
-weightsPath = os.path.sep.join([args["face"],
-	"res10_300x300_ssd_iter_140000.caffemodel"])
-faceNet = cv2.dnn.readNet(prototxtPath, weightsPath)
-# load our serialized age detector model from disk
-print("[INFO] loading age detector model...")
-prototxtPath = os.path.sep.join([args["age"], "age_deploy.prototxt"])
-weightsPath = os.path.sep.join([args["age"], "age_net.caffemodel"])
-ageNet = cv2.dnn.readNet(prototxtPath, weightsPath)
+#Path for csv file
+PATH = "age_gender.csv"
 
-# load the input image and construct an input blob for the image
-image = cv2.imread(args["image"])
-(h, w) = image.shape[:2]
-blob = cv2.dnn.blobFromImage(image, 1.0, (300, 300),
-	(104.0, 177.0, 123.0))
-# pass the blob through the network and obtain the face detections
-print("[INFO] computing face detections...")
-faceNet.setInput(blob)
-detections = faceNet.forward()
+#Reading csv file with pandas
+print("Reading data...")
+data = pd.read_csv(PATH)
+print(data.head(10))
+print("Data printed successfully!")
 
-# loop over the detections
-for i in range(0, detections.shape[2]):
-	# extract the confidence (i.e., probability) associated with the
-	# prediction
-	confidence = detections[0, 0, i, 2]
-	# filter out weak detections by ensuring the confidence is
-	# greater than the minimum confidence
-	if confidence > args["confidence"]:
-		# compute the (x, y)-coordinates of the bounding box for the
-		# object
-		box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
-		(startX, startY, endX, endY) = box.astype("int")
-		# extract the ROI of the face and then construct a blob from
-		# *only* the face ROI
-		face = image[startY:endY, startX:endX]
-		faceBlob = cv2.dnn.blobFromImage(face, 1.0, (227, 227),
-			(78.4263377603, 87.7689143744, 114.895847746),
-			swapRB=False)
-        # make predictions on the age and find the age bucket with
-		# the largest corresponding probability
-		ageNet.setInput(faceBlob)
-		preds = ageNet.forward()
-		i = preds[0].argmax()
-		age = AGE_BUCKETS[i]
-		ageConfidence = preds[0][i]
-		# display the predicted age to our terminal
-		text = "{}: {:.2f}%".format(age, ageConfidence * 100)
-		print("[INFO] {}".format(text))
-		# draw the bounding box of the face along with the associated
-		# predicted age
-		y = startY - 10 if startY - 10 > 10 else startY + 10
-		cv2.rectangle(image, (startX, startY), (endX, endY),
-			(0, 0, 255), 2)
-		cv2.putText(image, text, (startX, y),
-			cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 0, 255), 2)
-# display the output image
-cv2.imshow("Image", image)
-cv2.waitKey(0)
+data.pixels = np.asarray(data.pixels)
+
+#We need to convert pixels to array and reshape it to 3d array
+image = pixel_to_array("pixels")
+
+age = data.age
+
+train_X, test_X, train_y, test_y = model_selection.train_test_split(image, age,test_size = 0.30)
+
+model = sequential_model()
+
+model.compile(optimizer='sgd',loss='mean_squared_error')
+
+history = model.fit(train_X, train_y, epochs = 10)
+
+print("Final test result is: " + str(model.evaluate(test_X,test_y)[1]) + " mean absloute error")
