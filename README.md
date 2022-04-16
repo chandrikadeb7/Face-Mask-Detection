@@ -25,7 +25,7 @@ Amid the ongoing COVID-19 pandemic, there are no efficient face mask detection a
 ## PPT and Project Report sharing costs ₹1000 ($15)
 If interested, contact me at chandrikadeb7@gmail.com
 
-# 🌟 [Purchase at a Discounted Rate](https://gum.co/GetFaceMask)
+# 🌟 [Purchase on Gumroad](https://gum.co/GetFaceMask)
  
 ## :hourglass: Project Demo
 :movie_camera: [YouTube Demo Link](https://youtu.be/wYwW7gAYyxw)
