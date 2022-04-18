@@ -1,6 +1,11 @@
 #This is training code for age detection model
 #Currently, mean ablsoute error value is about ±30 age which is so big
 
+# Also, the problem that I faced with the Github is uploading age_gender.csv file to master branch because it was almost 199 mb.
+# And github says I should upload via Github LFS which is not possible with my laptop(Error is "fatal: cannot exec 'git-lfs': Bad CPU type in executable")
+# Then I just shared age_gender.csv file on Google Drive. The Link is:
+AGE_CSV = "https://drive.google.com/file/d/1iuWUN-Cy_wynFTnhOv4OfJkOG80o3NOf/view?usp=sharing"
+
 
 #Import libraries
 import pandas as pd
