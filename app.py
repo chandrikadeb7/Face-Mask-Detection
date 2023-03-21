@@ -67,30 +67,32 @@ def mask_image():
             # extract the face ROI, convert it from BGR to RGB channel
             # ordering, resize it to 224x224, and preprocess it
             face = image[startY:endY, startX:endX]
-            face = cv2.cvtColor(face, cv2.COLOR_BGR2RGB)
-            face = cv2.resize(face, (224, 224))
-            face = img_to_array(face)
-            face = preprocess_input(face)
-            face = np.expand_dims(face, axis=0)
+            if len(face):
+                face = cv2.cvtColor(face, cv2.COLOR_BGR2RGB)
+                face = cv2.resize(face, (224, 224))
+                face = img_to_array(face)
+                face = preprocess_input(face)
+                face = np.expand_dims(face, axis=0)
 
-            # pass the face through the model to determine if the face
-            # has a mask or not
-            (mask, withoutMask) = model.predict(face)[0]
+                # pass the face through the model to determine if the face
+                # has a mask or not
+                (mask, withoutMask) = model.predict(face)[0]
 
-            # determine the class label and color we'll use to draw
-            # the bounding box and text
-            label = "Mask" if mask > withoutMask else "No Mask"
-            color = (0, 255, 0) if label == "Mask" else (0, 0, 255)
+                # determine the class label and color we'll use to draw
+                # the bounding box and text
+                label = "Mask" if mask > withoutMask else "No Mask"
+                color = (0, 255, 0) if label == "Mask" else (0, 0, 255)
 
-            # include the probability in the label
-            label = "{}: {:.2f}%".format(label, max(mask, withoutMask) * 100)
+                # include the probability in the label
+                label = "{}: {:.2f}%".format(label, max(mask, withoutMask) * 100)
 
-            # display the label and bounding box rectangle on the output
-            # frame
-            cv2.putText(image, label, (startX, startY - 10),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 2)
-            cv2.rectangle(image, (startX, startY), (endX, endY), color, 2)
-            RGB_img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+                # display the label and bounding box rectangle on the output
+                # frame
+                cv2.putText(image, label, (startX, startY - 10),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 2)
+                cv2.rectangle(image, (startX, startY), (endX, endY), color, 2)
+                RGB_img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+                
 mask_image()
 
 def mask_detection():
